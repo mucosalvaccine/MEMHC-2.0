@@ -135,26 +135,6 @@ for group_name, group_data in grouped:
 df1 = filtered_df
 print(df1)
 
-"""
-#defining the Kd_treshold for peptides in nM
-Kd_treshold_nM = 500
-exclude_cols = ["start", "peptide"]
-for i in range(0, (df1.shape[0])):
-    for j in range(0, (df1.shape[1])):
-      if df1.columns[j] not in  exclude_cols:  # skip column with title "start"
-        p = df1.iloc[i][j]
-        if type(p) !=  str:
-            if int(p) <= Kd_treshold_nM:
-                p = 1
-            elif int(p) > Kd_treshold_nM:
-                p = 0
-        elif type(p) == str:
-            p = p
-        df1.iloc[i,j] = p
-print(df1)
-
-"""
-#Alternative code for the above to be faster 
 
 Kd_treshold_nM = 500
 exclude_cols = ["start", "peptide"]  # list of column names to exclude

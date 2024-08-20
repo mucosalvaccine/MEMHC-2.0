@@ -49,13 +49,15 @@ Depen
 
 Running Script:
 
-For running this script you will need to install mhcflurry.
+
+Run the script :Minimal-epitop-for-maximal-MHCI&II-coverage.py
+For running this script in example you will need to install mhcflurry.
 you would then need to input a protein sequence of intrest, a minimum and a maximum lenght for the peptide in comand-prompt . 
 You will also need to give a HLA file including all the inquire HLA that are intended for prediction. An HLA file with exhusative list of HLA (MHCI) is enlisted in HLA type I.csv file as an example.
 An out put would be a CSV file (MHCI-output-minimal-epitop-maxcoverage.csv)
 
 
-Please, refer to Author (Mohammd Arabpour) for any further questions.
+Please, refer to Author (Mohammd Arabpour: mohammad.arabpour.sinior@gmail.com) for any further questions.
 
 
 

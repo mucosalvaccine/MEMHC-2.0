@@ -55,8 +55,7 @@ Running Script:
 
 Run the script :
 
-Run MEMHC 2.0.py script
-For running this script in example you will need to install mhcflurry.
+Run MEMHC 2.0.py script in a python supporting environment. Also, for running this script in example you will need to install mhcflurry.
 you would then need to input a protein sequence of intrest, a minimum and a maximum lenght for the peptide in comand-prompt . 
 You will also need to give a HLA file including all the inquire HLA that are intended for prediction. An HLA file with exhusative list of HLA (MHCI) is enlisted in HLA type I.csv file as an example.
 An out put would be a CSV file (MHCI-output-minimal-epitop-maxcoverage.csv)

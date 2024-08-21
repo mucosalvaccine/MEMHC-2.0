@@ -1,10 +1,12 @@
+## MEMHC 2.0 (minimal-epitope-for-maximum-MHC-coverage version 2.0)
+
 
 ## Objective
 
 This software aims to generate a minimal number of peptides that provide maximum MHC and HLA coverage, specifically for use in vaccine and immunotherapy applications targeting T cell epitopes. It takes a protein sequence, peptide length range, and a list of HLA alleles as inputs. The script predicts the binding affinities of peptides to the specified HLA alleles, filters out similar peptides, and selects the ones that cover the widest range of HLA alleles with high affinity. The result is a CSV file listing the selected peptides with their corresponding coverage scores. This tool is adaptable to various MHC affinity prediction methods, such as mhcflurry, NetMHC, and others.
 
 
-## pipline (minimal-epitope-for-maximum-MHC-coverage version 2.0)
+## pipline 
 """
 The script provided takes in a user input of a protein sequence, minimum and maximum peptide lengths, and a list of HLA alleles from a csv file. It generates peptides of different lengths from the protein sequence, and then predicts the binding affinity of each peptide with each HLA allele. The predicted binding affinities are stored in a pandas DataFrame and filtered to remove peptides that are similar to each other based on their start positions. Lastly, the filtered DataFrame is converted to binary values based on a Kd_treshold of 500 nM and the relative HLA coverage is calculated.
 
@@ -51,7 +53,9 @@ Depen
 Running Script:
 
 
-Run the script :Minimal-epitop-for-maximal-MHCI&II-coverage.py
+Run the script :
+
+Run MEMHC 2.0.py script
 For running this script in example you will need to install mhcflurry.
 you would then need to input a protein sequence of intrest, a minimum and a maximum lenght for the peptide in comand-prompt . 
 You will also need to give a HLA file including all the inquire HLA that are intended for prediction. An HLA file with exhusative list of HLA (MHCI) is enlisted in HLA type I.csv file as an example.

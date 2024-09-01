@@ -192,9 +192,9 @@ def run_script():
                 sum_value = 0
             relative_HLA_coverage += sum_value
 
-    df1.to_csv('filtered_e7_netmhcpan_2915_alleles_8_to_11_mers.csv', index=False)
+    df1.to_csv('filtered_protein_alleles_peptides.csv', index=False)
     df1['sum_weight'] = df1.sum(axis=1, skipna=True, numeric_only=True)
-    df1.to_csv('E7_clement_result_table.csv', index=False)
+    df1.to_csv('HLA-hit-Result-TAble.csv', index=False)
     total1 = df1.shape[1] - 1
     df1 = df1.sort_values(by='sum_weight', axis=0, ascending=False, inplace=False, kind='quicksort', na_position='last',
                           ignore_index=False, key=None)
@@ -208,7 +208,7 @@ def run_script():
 
     totalcoverage = leadcoverage
     total = total1
-    df1.to_csv('jojojo.csv', index=False)
+    df1.to_csv('final-table.csv', index=False)
 
     col_name = 'start'
     col_to_move = df1.pop(col_name)

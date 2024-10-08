@@ -8,7 +8,7 @@ This software aims to generate a minimal number of peptides that provide maximum
 
 ## pipline 
 """
-The script provided takes in a user input of a protein sequence, minimum and maximum peptide lengths, and a list of HLA alleles from a csv file. It generates peptides of different lengths from the protein sequence, and then predicts the binding affinity of each peptide with each HLA allele. The predicted binding affinities are stored in a pandas DataFrame and filtered to remove peptides that are similar to each other based on their start positions. Lastly, the filtered DataFrame is converted to binary values based on a Kd_treshold of 500 nM and the relative HLA coverage is calculated.
+The script provided takes in a user input of a protein sequence, minimum and maximum peptide lengths, and a list of HLA alleles from a csv file. It  generates peptides of different lengths from the protein sequence, and then predicts the binding affinity of each peptide with each HLA allele. The predicted binding affinities are stored in a pandas DataFrame and filtered to remove peptides that are similar to each other based on their start positions. Lastly, the filtered DataFrame is converted to binary values based on a Kd_treshold of 500 nM and the relative HLA coverage is calculated. It uses a greedy selection method of peptides to find the maximal coverage of MHC while minimising the number of peptides.
 
 To execute the script, you will need to install the mhcflurry package, which is used to predict binding affinities. You can install it by running pip install mhcflurry. You will also need to have pandas installed, which you can install by running pip install pandas.
 
